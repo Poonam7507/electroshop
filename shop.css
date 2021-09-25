@@ -1,0 +1,754 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+ h1:hover{
+    cursor: pointer;
+}
+.head{
+    background-color: rgb(52, 52, 240);
+   
+    
+}
+.head ul{
+    display: flex;
+    justify-content:space-evenly;
+}
+.head ul li{
+    font-size: 1.8vw;
+    list-style: none;
+    color:white;
+  
+
+}
+.title{
+  background: linear-gradient(to right bottom,rgba(245, 243, 243, 0.25),rgb(31, 25, 25,0.45));
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.3vw;
+    display: flex;
+    /* background-color: aqua; */
+}
+.title .logo{
+    /* height:63px; */
+    /* width:370px; */
+    width: 30%;
+}
+.title img{
+    /* height: 63px;
+    width: 370px;  */
+    height: 100%;
+    width: 80%;
+
+}
+.title #categories{
+    width:100%;
+    margin-top: 8px;
+text-align: center;
+    height: 70%;
+    /* margin-left: 35px; */
+    padding-top:1.3px;
+    font-size:1.5vw;
+    box-shadow: 2px 2px  rgb(128, 128, 128 ,0.98) ;
+    
+    
+ } 
+ .title #categories h3{
+     font-size: 1.2vw;
+ }
+
+.title .icon{
+    /* width: 50px;
+    height:47px; */
+    width:9%;
+    height:15%;
+    /* font-size: 38px; */
+    font-size: 3vw;
+    margin: 12px 85px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgb(128, 128, 128 ,0.98) ;
+
+    
+}
+
+.navbar{
+    background: linear-gradient(rgb(255, 255, 255),grey);
+    position: sticky;
+    /* background-color: grey; */
+}
+.navbar .icon{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px  rgb(128, 128, 128 ,0.98) ;
+}
+.navbar  ul li{
+    list-style: none;
+    
+    margin-inline: 3%;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.8vw;
+}
+    
+
+.navbar ul li a:hover{
+    transition: 0.2s;
+ /* background-color: grey; */
+/* text-shadow: 2px  solid white; */
+color:blue;
+}
+.link {
+        
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-size: 2.2vw;
+}
+
+
+#home .firstpage {
+    position: relative;
+    /* box-sizing: border-box; */
+    
+}
+#home .firstpage img {
+    display: block;
+    /* background-image: url(img2.jpg); */
+    width:100% ;
+    height: 100%;
+    /* height:600px; */
+   
+}
+
+#home .firstpage .page {
+    position: absolute;
+     top:11%;
+     width:50%;
+     left: 26%;
+    background-color: rgba(16, 16, 16, 0.27);
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    
+    /* box-shadow: 0px 2px 2px 2px rgb(2 2 2 / 43%); */
+    box-shadow: 0px 0.40vw 0.40vw 0.40vw rgb(2 2 2 / 43%);
+
+    
+}  
+#home .firstpage .page h1{
+    margin-left: 15px;
+    color:white;
+    /* font-size: 65px; */
+    font-size: 5vw;
+    /* text-shadow: -0.6vw 0.3vw black; */
+    text-shadow: -0.30vw 0.6vw black;
+    /* margin-left: 65px; */
+}
+#home .firstpage .page b{
+    color:blue;
+}
+#home .firstpage .page h2{
+    color:white;
+    margin-top: 12px;
+    text-shadow: 0.1vw -0.4vw black;
+
+    font-size: 2vw;
+
+}
+
+#home .firstpage .page h3{
+    font-size: 1.3vw;
+     
+}
+#home .firstpage .page .btn{
+    /* height: 50px;
+    width: 150px;
+    margin:90px; */
+    margin:10%;
+    height: 14%;
+    width: 15%;
+    color: black;
+    background: linear-gradient(to bottom right, blue,rgb(207, 122, 207));
+    transition-duration: all 1s ease-in;
+}
+#home .firstpage .page .btn:hover{
+    background: linear-gradient(to  bottom right ,blue,aqua);
+}
+
+ .slider{
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+   
+}
+
+#shop{
+    /* height: 1000px; */
+    /* background-image:url(img3.jpeg); */
+    /* height: 900px; */
+    background-attachment: fixed;
+
+}
+#shop  span h1{
+    text-align: center;
+    margin:12px;
+    background: linear-gradient(to right,burlywood,white,burlywood);
+}
+#shopbox1{
+    justify-content: space-around;
+    /* height:800px; */
+    justify-content: center;
+    box-shadow: 0px 0px 15px 0px #d6d6d6;
+    display: flex;
+    padding: 50px;
+    margin:23px;
+    
+}
+.shopbox {
+    justify-content: space-between;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .class {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .shopbox:hover .class {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .container, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .container {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+#shopbox1 .btn1 {
+    
+    width: 15%;
+    height: 30%;
+    border-radius: 15px;
+    box-shadow: 2px 2px grey;
+    margin: 20px;
+    padding: 1.2% ;
+   
+}
+#shopbox1 .btn1 p{
+    font-size: 1.2vw;
+
+}
+#shopbox1 .btn1:hover{
+    transition-duration: 1s;
+    background-color: blue;
+    color: white;
+    /* background:linear-gradient(to right bottom,blue,wheat); */
+}
+#shopbox1 .container{
+    /* margin:40px; */
+   box-shadow: 0px 0px 15px 0px #d6d6d6;
+   /* box-shadow: 2px 2px #d6d6d6 ; */
+}
+
+#shopbox1 .container img{
+    display: block;
+    margin: auto;
+    width:100%;
+    height: 100%;
+
+    
+    /* height: 200px; */
+}
+#shopbox1 h2{
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+#shopbox1 .container h2{
+    color:blueviolet;
+    
+}
+#shopbox1 .container h2:hover{
+    color: black;
+}
+
+#shopbox1 .container .btn{
+    width:100%;
+    height:30px;
+    text-align: center;
+    /* background: linear-gradient(to bottom right, blue,aqua,purple); */
+    font-size: 1.8vw;
+    /* transition: all 0.8s ease-in-out; */
+}
+#shopbox1 .back .btn:active{
+    color: indianred;
+}
+#shopbox1 .back .btn{
+    margin-top:150px;
+    width:100%;
+    height:30px;
+    text-align: center;
+    background: linear-gradient(to bottom right, blue,aqua,purple);
+    font-size: 1.6vw;
+    /* transition: all 0.8s ease-in-out; */
+}
+
+
+.discount img{
+   width:50%;
+   margin-top:70px;
+   justify-content: center;
+   padding-left:23%;
+}
+#offerzone{
+    background-image:url("https://images.pexels.com/photos/1337753/pexels-photo-1337753.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") ;
+    background-attachment: fixed;
+    height:100%;
+}
+#offerzone #shopping{
+    justify-content: space-evenly;
+    display: flex;
+}
+#offerzone  h1{
+    margin: 20px;
+    text-align: center;
+    color:blue;
+    text-shadow:  2px 2px white;
+}
+#offerzone  #shopping .con{
+    text-align: center;
+    /* width:260px; */
+    height: 300px;
+   
+}
+#offerzone  #shopping  img{
+    display: block;
+    margin: auto;
+    width:100%;
+    height: 80%;
+    width: 20vw;
+    height: 30vh;
+    border:2px solid crimson;
+}
+#offerzone #shopping img:hover{
+    transition: all 1s ease-in-out;
+    transform: scale(1.04);
+}
+#offerzone   h1{
+    padding-top:7%;
+    text-align: center;
+
+}
+#offerzone #shopping  h2 {
+    background: linear-gradient(to bottom right, blue,aqua,purple);
+    text-align: center;
+    color:rgb(73, 73, 238);
+    text-shadow: grey;
+    font-size: 2vw;
+}
+#offerzone #shopping  h2:hover{
+    transition: all 1s ease;
+    color: black;
+}
+#offerzone #shopping .container1{
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border:2px solid grey;
+    width:30vw;
+    height: 30vh;
+    border: 2px solid red;
+    border-radius: 30px;
+    font-size: 1.5vw;
+    margin-bottom: 6%;
+}
+#offerzone #shopping .container1 img{
+    width: 100%;
+    height: 90%;
+}
+.container1{
+    display: flex;
+    padding: 3%;
+    margin-top:100px;
+}
+
+.brand .logoicon{
+    background:linear-gradient(to right bottom,burlywood,white,burlywood);
+    justify-content:center;
+    display: flex;
+}
+.brand .logoicon img{
+    margin-inline: 1px;
+    /* width:55px; */
+    border-radius: 50px;
+}
+#contactus{
+    height:100%;
+    background:linear-gradient(to right bottom,pink,pink,violet);
+    justify-content: center;
+}
+
+#contactus .contact{
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+#contactus .contact h1{
+color: crimson;
+text-shadow:2px 2px white;
+padding:1%;
+}
+
+#contactus .contact h3{
+    padding:3%;
+    color:black;
+    text-shadow: 2px 2px darkgrey;
+}
+.contact .box{
+    display: flex;
+}
+
+.contact .box .box1{
+    font-size: 2vw;
+    margin:30px;
+    width:50%;
+    /* height: 20vh; */
+    padding: 1%;
+    border: 2px solid rgb(243, 74, 74);
+    background: linear-gradient(to right, pink,white);
+    border-radius: 30px;
+    transition-duration:0.8s ;
+}
+.contact .box .box1:hover{
+    transform: scale(1.1);
+}
+form .outer{
+    padding:5%;
+    text-align: center;
+    justify-content: center;
+}
+form .outer #name{
+    width:30%;
+    height:30px;
+    /* background-color: rgb(200, 157, 240); */
+    color:red;
+    border:2px solid pink;
+    /* font-size: 2vw; */
+    border-radius: 5px;
+}
+form .outer textarea{
+    width:30%;
+    height:33vh;
+    resize: vertical;
+}
+form .btn {
+    color:white;
+    background-color: blue;
+}
+#aboutus{
+    /* height: 100%; */
+    /* background: linear-gradient(to right bottom,gold,blue,white ,url("img4.jpeg")); */
+    /* background-image: url("aboutus.jpeg"); */
+    background-image: linear-gradient(to right bottom ,blue,pink);
+
+}
+#aboutus .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+ opacity: 0.5;
+}
+#aboutus h1{
+    padding: 1%;
+    color: crimson;
+    text-shadow:2px 2px wheat;
+    text-align: center;
+}
+#aboutus .p{
+    position: absolute;
+    top:30%;
+    left:4%;
+    color:wheat;
+    text-shadow:2px 2px rgb(245, 13, 13);
+    padding: 40px;
+    font-size: 2vw;
+}
+
+#pages{
+    padding-bottom: 10%;
+    width: 100%;
+    background-image: linear-gradient(to right bottom,rgb(248, 191, 200,0.79),rgb(84, 236, 236,0.68)),url(cust.jpeg);
+    background-attachment: fixed;
+    height: 100%;
+    
+    
+}
+
+#pages h1{
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+    color:crimson;
+    text-shadow: wheat;
+    
+}
+
+#pages .page1 {
+text-align: center;
+justify-content: center;
+} 
+#pages .page .page1{
+    justify-content: center;
+    /* width:40vw;
+    height: 20vh; */
+    border:2px solid red;
+    /* margin: auto; */
+    border-radius: 40px;
+    padding: 5%;
+    margin: 6% 30%;
+    text-align: center;
+    /* margin-bottom:20px; */
+    color:deeppink;
+    background-color: rgb(16, 16, 16,0.25);
+    box-shadow: 0px 2px 2px 2px rgb(2 2 2 / 43%);
+
+   
+}
+#pages .page .page1 h1{
+    transition-duration: 0.9s;
+    font-size: 2.5vw;
+}
+#pages .page .page1 h1:hover{
+    cursor: pointer;
+      transform: scale(1.1);
+}
+#footer{
+  color:darkblue;
+    background:linear-gradient(to right,white,rgb(116, 116, 226),white);
+    display: flex;
+    justify-content: space-between;
+}
+#footer .quicklink{
+    padding-left: 2.5%;
+    
+}
+
+#footer .quicklink h3{
+    font-size: 2vw;
+
+}
+#footer .quicklink li :hover{
+    color:white;
+    text-shadow: 2px 2px black;
+}
+#footer .quicklink .link{
+    text-decoration: none;
+   
+    color:darkblue;
+    
+}
+#footer .quicklink ul li{
+    list-style: none;
+
+    
+}
+
+#footer  .mailus h3{
+    font-size: 2vw;
+}
+
+#footer  .followus h1{
+    color:darkblue;
+    font-size: 2.4vw;
+}
+#footer  .followus .icon{
+    
+    font-size:3vw;
+    text-align: center;
+}
+#footer  .followus .icon:hover{
+  color: red;
+}
+
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width: 595px){
+    .navbar ul li{
+        margin-inline: 16px;
+        font-size: 3vw;
+    }
+    .title #categories{
+        height: 40%;
+        margin-top: 15px;
+    }
+    .shopbox{
+        width: 200px;
+        height: 100px;
+    }
+   
+    p{
+        font-size: 2.8vw;
+    }
+    #offerzone #shopping img{
+         width: 100%;
+         height: 75%;
+    }
+    #offerzone #shopping .con{
+        width: 20vw;
+        height: 25vh;
+    }
+    #shop .box h1{
+        font-size: 4vw;
+    }
+   
+    #shopbox1 .back .btn{
+        margin-top: 80px;
+    }
+    #pages h1{
+        font-size: 3vw;
+    }
+    .column #name{
+        font-size: 2vw;
+    }
+  
+}
+@media screen and (max-width:430px) {
+    
+    .head ul li{
+        font-size: 2vw;
+    }
+    .menu ul li{
+        
+        display: none;
+        
+    }
+    
+    
+    .menu  .icon{
+        display: block;
+
+    }
+   
+    
+    p{
+        font-size: 2.5vw;
+    }
+
+    #shopbox1{
+        flex-direction: column;
+    }
+    #shopbox1 .btn1 p{
+        font-size: 2vw;
+    
+    }
+    #shop .box h1{
+        font-size: 3vw;
+    }
+    .shopbox{
+        width: 200px;
+        /* height: 100px; */
+    }
+    .shopbox img{
+        width: 80%;
+        height: 100%;
+    }
+    #shopbox1 .container .btn{
+        display: none;
+    }
+    .title .logo{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width:430px){
+  #mymenu{
+      background: linear-gradient(rgb(255, 255, 255),grey);
+      /* background:linear-gradient(to right ,rgba(159, 159, 197, 0.54),white); */
+      text-align: center;
+      justify-content: center;
+      /* font-style: italic; */
+      
+    }
+    #mymenu:hover{
+        font-style: italic;
+    }
+    #mymenu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #mymenu ul li:hover{
+        background:linear-gradient(to right,burlywood,white,burlywood);
+        
+         text-decoration: underline;
+         text-decoration-color: blue;
+         text-decoration-style:double;
+  }
+    #mymenu .icon{
+        display: block;
+    }
+    
+        
+        /* width: 50%; */
+        /* margin-left: 50%; */
+    
+    .menu.responsive .icon{
+        font-size: 10px;
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+   
+    .menu.responsive ul{
+        background-color: blue;
+        /* display: block; */
+        flex-direction: column;
+    }
+    .link {
+        
+        text-align: center;
+        text-decoration: none;
+        color:black;
+        font-size: 2.5vw;
+    }
+    #aboutus p{
+        font-size: 3vw;
+    }
+
+}
