@@ -22,12 +22,18 @@
   
 
 }
+.head ul li a{
+    color:white;
+    font-size: 1.8vw;
+    text-decoration: none;
+
+
+}
 .title{
   background: linear-gradient(to right bottom,rgba(245, 243, 243, 0.25),rgb(31, 25, 25,0.45));
     font-family: 'Great Vibes', cursive;
     font-size: 1.3vw;
     display: flex;
-    /* background-color: aqua; */
 }
 .title .logo{
     /* height:63px; */
@@ -46,7 +52,6 @@
     margin-top: 8px;
 text-align: center;
     height: 70%;
-    /* margin-left: 35px; */
     padding-top:1.3px;
     font-size:1.5vw;
     box-shadow: 2px 2px  rgb(128, 128, 128 ,0.98) ;
@@ -131,11 +136,11 @@ color:blue;
      top:11%;
      width:50%;
      left: 26%;
-    background-color: rgba(16, 16, 16, 0.27);
-    
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    
-    /* box-shadow: 0px 2px 2px 2px rgb(2 2 2 / 43%); */
+     
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+     
+     /* box-shadow: 0px 2px 2px 2px rgb(2 2 2 / 43%); */
+     background-color: rgba(16, 16, 16, 0.27);
     box-shadow: 0px 0.40vw 0.40vw 0.40vw rgb(2 2 2 / 43%);
 
     
@@ -269,6 +274,15 @@ color:blue;
     font-size: 1.2vw;
 
 }
+
+#shopbox1 .btn1 p a{
+    text-decoration: none;
+    color: white;
+  
+}
+#shopbox1 .btn1{
+  background-color: black;
+}
 #shopbox1 .btn1:hover{
     transition-duration: 1s;
     background-color: blue;
@@ -332,7 +346,8 @@ color:blue;
    padding-left:23%;
 }
 #offerzone{
-    background-image:url("https://images.pexels.com/photos/1337753/pexels-photo-1337753.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") ;
+    /* background-image:url("") ; */
+    background-color: #edd8be;
     background-attachment: fixed;
     height:100%;
 }
@@ -478,16 +493,14 @@ form .btn {
     background-color: blue;
 }
 #aboutus{
-    /* height: 100%; */
-    /* background: linear-gradient(to right bottom,gold,blue,white ,url("img4.jpeg")); */
-    /* background-image: url("aboutus.jpeg"); */
-    background-image: linear-gradient(to right bottom ,blue,pink);
-
-}
-#aboutus .img{
-    position: relative;
+   
+    background-image: linear-gradient(to right bottom ,rgb(32, 32, 243),rgb(248, 158, 173));
     width: 100%;
     height: 100%;
+ 
+}
+#aboutus .img{
+    /* position: relative; */
  opacity: 0.5;
 }
 #aboutus h1{
@@ -509,7 +522,7 @@ form .btn {
 #pages{
     padding-bottom: 10%;
     width: 100%;
-    background-image: linear-gradient(to right bottom,rgb(248, 191, 200,0.79),rgb(84, 236, 236,0.68)),url(cust.jpeg);
+    background-image: linear-gradient(to right bottom,rgb(248, 191, 200,0.79),rgb(84, 236, 236,0.68)),url(./images/cust.jpeg);
     background-attachment: fixed;
     height: 100%;
     
@@ -533,15 +546,12 @@ justify-content: center;
 } 
 #pages .page .page1{
     justify-content: center;
-    /* width:40vw;
-    height: 20vh; */
+  
     border:2px solid red;
-    /* margin: auto; */
     border-radius: 40px;
     padding: 5%;
     margin: 6% 30%;
     text-align: center;
-    /* margin-bottom:20px; */
     color:deeppink;
     background-color: rgb(16, 16, 16,0.25);
     box-shadow: 0px 2px 2px 2px rgb(2 2 2 / 43%);
@@ -556,6 +566,107 @@ justify-content: center;
     cursor: pointer;
       transform: scale(1.1);
 }
+
+#loginform{
+  height: 100%;
+    background:linear-gradient(to top,blue,white);
+}
+#loginform #container {
+    width: 50%;
+    margin:auto ;
+    margin-top: 5%;
+}
+#loginform .tabs {
+    display: table-cell;
+    /* width: 30%; */
+    background:linear-gradient(to right   ,blue,white,rgb(125, 160, 234));
+
+    padding: 1vw;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #ffffff;
+    border-bottom: 0px;
+    position: relative;
+    font-size: 2vw;
+    color: black;
+}
+#loginform .tabs:hover, p{
+    cursor: pointer;
+}
+
+#loginform #lt {
+    background:linear-gradient(to right   ,blue,white,rgb(143, 149, 225));
+
+}
+#loginform #lt:active{
+    background:linear-gradient(to right   ,rgb(130, 130, 248),white,rgb(135, 135, 239));
+
+}
+#loginform #cont {
+    width: 100%;
+    height: 30vw;
+    background:linear-gradient(to right  ,blue,rgb(172, 167, 219));
+    border: 2px solid #ffffff;
+    margin-bottom: 2vw;
+}
+#loginform .tabs:active{
+    background:linear-gradient(to right   ,rgb(130, 130, 248),white,rgb(135, 135, 239));
+
+}
+#loginform .infoform{
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    margin: 1vw 6.3vw;
+    padding: 1vw;
+    font-size: 1.3vw;
+    color: black;
+    outline: 2px solid #ffffff;
+}
+
+#loginform input[type="submit"] {
+    margin-top:4vw;
+    width: 20vw;
+    color: white;
+    background-color: blue;
+    border-radius: 9px;
+}
+
+#loginform #clear {
+    clear: both;
+}
+
+.comm {
+    position: absolute;
+    visibility: hidden;
+}
+#loginform #login {
+    visibility: visible;
+}
+
+#loginform #cont h3 {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1vw 1.5vw;
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+#loginform #forgot h3 {
+    display: block;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+#loginform #forgot div {
+    margin-top: 3vw;
+}
+#loginform p {
+    padding: 1vw 1.5vw;
+    color: white;
+}
+
 #footer{
   color:darkblue;
     background:linear-gradient(to right,white,rgb(116, 116, 226),white);
@@ -700,10 +811,8 @@ justify-content: center;
 @media screen and (max-width:430px){
   #mymenu{
       background: linear-gradient(rgb(255, 255, 255),grey);
-      /* background:linear-gradient(to right ,rgba(159, 159, 197, 0.54),white); */
       text-align: center;
       justify-content: center;
-      /* font-style: italic; */
       
     }
     #mymenu:hover{

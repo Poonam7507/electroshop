@@ -17,52 +17,46 @@
             <li><i class="fa fa-map-marker"> Select Location</i></li>
             <li><i class="fa fa-phone">012 345 6789</i></li>
             <li><i class="fa fa-truck">Track Order</i></li>
-            <li><i class="fa fa-sign-in">Log In</i></li>
-            <li><i class="fa fa-sign-in">Register</i></li>
+            <a href="login.html"> <li><i class="fa fa-sign-in"  onclick="loginTabFun()">Log In </i></li></a>
+            <a href="login.html"> <li><i class="fa fa-sign-in" onclick="regTabFun()">Register</i></li></a>
         </ul> 
      </div> 
     <div class="title">
         <div class="logo">
-        <img src="logo2.png" alt="sry"  >
+        <img src="./images/logo2.png" alt="sry"  >
     </div>
            
         <div class="categories">
-            <!-- <form action="#" class="formout">
-                <input class="formin" type="search" placeholder="search">
-            </form> -->
-           
-            <select name="" id="categories">
-               <option value="0" selected type disabled><h3>All categories</h3></option>
-               <option value="1">Smart Phones</option>
-               <option value="2">Headphone</option>
-               <option value="4">Washing Machine</option>
-               <option value="5">Laptop</option>
-               <option value="6">Cameras</option>
-               <option value="7">Refrigerator</option>
+            <select name="s" id="categories"onchange="location = this.value">
+               <option value="index.html" >All categories</option>
+               <option value="phonepage.html">Smart Phones</option>
+               <option value="laptoppage.html">Laptop</option>
+               <option value="headphonepage.html">Headphone</option>
            </select>  
         </div>
         <div class="icon" onclick="cart() ">
               <i class="fa fa-shopping-cart"></i>
-            <!-- <img src="icon.jpeg" alt="sry" > -->
         </div>
+        
     </div>
    <nav class="navbar"  >
         <div class="menu" id="mymenu" >
             <ul>
                 <a  class="icon" href="javascript:void(0)" onclick="myfunction()" > <i class="fa fa-bars"></i></a>
-                <li> <a  href="electric.html" class="link">Home </a></li>
+                <li> <a  href="index.html" class="link">Home </a></li>
                 <li> <a href="about.html" class="link"> About Us</a></li>
                 <li> <a href="pages.html" class="link"> Customer's Reviews</a>
                   
                 </li>
                 <li> <a href="contact.html" class="link"> Contact Us</a></li>
+               
             </ul>
       </div>
     </nav>
     <section id="home">
     
         <div class="firstpage">
-            <img src="img1.jpeg" alt="sry" >
+            <img src="./images/img1.jpeg" alt="sry" >
             <div class="page">
 
                 <h2>Get flat 10% cashback</h2>
@@ -79,11 +73,11 @@
 <div class="brand">
     <div class="logoicon" class="slider">
             <marquee behavior="slider" direction="horizontally" width="200px" scrollamount="10">
-        <img src="img2.jpg" width="250px" alt="" >
-        <img src="laptopimg.jpg"   alt="">
-        <img src="cameraimg.jpg"   alt="">
-        <img src="washingimg.jpg"    alt="">
-        <img src="aboutus.jpeg" width="250px" alt="">
+        <img src="./images/img2.jpg" width="250px" alt="" >
+        <img src="./images/laptopimg.jpg"   alt="">
+        <img src="./images/cameraimg.jpg"   alt="">
+        <img src="./images/washingimg.jpg"    alt="">
+        <img src="./images/aboutus.jpeg" width="250px" alt="">
     </marquee>
         </div>
         </div>
@@ -97,7 +91,7 @@
                   <div class="shopbox">
                <div class="class">
                <div class="container">
-                   <img src="phone1.jpg" alt=""  class="image" >
+                   <img src="./images/phone1.jpg" alt=""  class="image" >
                    <div class="btn" ><p>Samsung J7 Pro</p></div>
                 </div>
                 <div class="back">
@@ -109,7 +103,7 @@
                <div class="shopbox">
                <div class="class">
                  
-           <div class="container"><img src="phone2.jpg" alt="" >
+           <div class="container"><img src="./images/phone2.jpg" alt="" >
             <div class="btn"><p>Apple Iphone 11</p></div>
 
         </div>
@@ -125,7 +119,7 @@
         <div class="shopbox">
             <div class="class">
 
-           <div class="container"><img src="phone3.jpg" alt=""   >
+           <div class="container"><img src="./images/phone3.jpg" alt=""   >
             <div class="btn"><p>Apple Iphone 12</p></div>
             
            </div>
@@ -137,7 +131,7 @@
            </div>
         </div>
         <button class="btn1" >
-            <p>Show More</p>
+            <p><a href="phonepage.html"> Show More</a></p>
          </button>
     </div>
 
@@ -147,7 +141,7 @@
             <h2>Laptops:</h2>
             <div class="shopbox">
                 <div class="class">
-           <div class="container"><img src="laptop1.jpg" alt=""  >
+           <div class="container"><img src="./images/laptop1.jpg" alt=""  >
             <div class="btn" onclick="buy() "><p>Dell Laptop</p></div>
 
            </div>
@@ -160,7 +154,7 @@
             </div>
             <div class="shopbox">
                 <div class="class">
-           <div class="container"><img src="laptop2.jpg" alt=""  >
+           <div class="container"><img src="./images/laptop2.jpg" alt=""  >
             <div class="btn"><p>Apple Laptop</p></div>
 
            </div>
@@ -173,7 +167,7 @@
     </div>
     <div class="shopbox">
         <div class="class">
-            <div class="container"><img src="laptop3.jpg" alt=""  >
+            <div class="container"><img src="./images/laptop3.jpg" alt=""  >
                 <div class="btn" ><p>Asus ZenBook Laptop</p></div>
                 
             </div>
@@ -185,7 +179,7 @@
         </div>
     </div> 
     <button class="btn1" >
-       <p>Show More</p>
+        <p><a href="laptoppage.html"> Show More</a></p>
     </button>
 </div>
     
@@ -193,7 +187,7 @@
             <h2>Headphones:</h2>
             <div class="shopbox">
                 <div class="class">
-           <div class="container"><img src="headphone1.jpg" alt=""  >
+           <div class="container"><img src="./images/headphone1.jpg" alt=""  >
             <div class="btn" ><p>Beats headphone</p></div>
            </div>
            <div class="back">
@@ -205,7 +199,7 @@
         </div>
         <div class="shopbox">
             <div class="class">
-           <div class="container"><img src="headphone2.jpg" alt=""  >
+           <div class="container"><img src="./images/headphone2.jpg" alt=""  >
             <div class="btn" ><p>Boult headphone</p></div>
 
     </div>    
@@ -218,7 +212,7 @@
             </div>
             <div class="shopbox">
             <div class="class">
-           <div class="container"><img src="headphone3.jpg" alt=""  >
+           <div class="container"><img src="./images/headphone3.jpg" alt=""  >
             <div class="btn" ><p>Boat headphone</p></div>
 
            </div>
@@ -230,7 +224,7 @@
         </div>
         </div>
           <button class="btn1" >
-       <p>Show More</p>
+            <p><a  href="headphonepage.html"> Show More</a></p>
     </button>
         </div>
     
@@ -239,31 +233,30 @@
 <section id="offerzone">
     
     <div class="discount" >
-        <img src="new.jpg" alt="">
+        <img src="./images/new.jpg" alt="">
     </div>
     <span><h1>Large Appliances</h1></span>
     <div id=shopping>
-     <div class="con"><a href="arrivals.html"><img src="refrigerator.jpg" alt="" >
+     <div class="con"><img src="./images/refrigerator.jpg" alt="" >
        <h2>Refrigerators</h2>
-    </a>
-        <!-- <h2>Buy Now</h2> -->
-        <!-- <div class="button">Buy Now</div> -->
+    
+      
     </div>
-     <div class="con"><a href="arrivals.html"><img src="washing machine.jpg" alt="" >
+     <div class="con"><img src="./images/washing machine.jpg" alt="" >
         <h2>Washing Machines</h2>
-    </a>
-        <!-- <h2>Buy Now</h2> -->
+  
+     
     </div>
-     <div class="con"><a href="arrivals.html"><img src="oven.jpg" alt="" >
+     <div class="con"><img src="./images/oven.jpg" alt="" >
         <h2>Microwave Ovens</h2>
-    </a>
-        <!-- <h2>Buy Now</h2> -->
+   
+      
     </div>
     </div>
     <div id=shopping>
         
         <div class="container1">
-           <span> <img src="camera.jpg" alt="" ></span>
+           <span> <img src="./images/camera.jpg" alt="" ></span>
 
            <h3> Get Ready To Click Ur Smile.
             Free Shipping Order Above $500</h3>
@@ -272,7 +265,7 @@
     </div>
      <div class="container1">
          
-        <span> <img src="headphone.jpg" alt="" ></span>
+        <span> <img src="./images/headphone.jpg" alt="" ></span>
 
         <h3> Smooth, Rich & Loud Audio
 Branded Headphones.
@@ -286,13 +279,13 @@ Sale up to 25% off all in store</h3>
       <section>
        <div class="brand">
         <div class="logoicon">
-            <marquee behavior="alternate" direction="horizontally" width="100px" scrollamount="7">
-            <img src="applelogo.jpg" width="48px" alt="">
-            <img src="delllogo.jpg"   width="70px" alt="">
-            <img src="beatslogo.png"  width="100px"  alt="">
-            <img src="whirlpoollogo.png"   width="70px" alt="">
-            <img src="samsunglogo.png"   width="60px" alt="">
-            <img src="boatlogo.png"   width="60px" alt="">
+            <marquee behavior="alternate" direction="horizontally" width="100px" scrollamount="7" >
+            <img src="./images/applelogo.jpg" width="48px" alt="">
+            <img src="./images/delllogo.jpg"   width="70px" alt="">
+            <img src="./images/beatslogo.png"  width="100px"  alt="">
+            <img src="./images/whirlpoollogo.png"   width="70px" alt="">
+            <img src="./images/samsunglogo.png"   width="60px" alt="">
+            <img src="./images/boatlogo.png"   width="60px" alt="">
 
         </marquee>
     </div>
@@ -302,7 +295,7 @@ Sale up to 25% off all in store</h3>
            
            <div class="quicklink">
                 <ul>
-                    <li> <a  class="link"  href="electric.html"><h3>Home</h3> </a></li>
+                    <li> <a  class="link"  href="index.html"><h3>Home</h3> </a></li>
                     <li> <a  class="link" href="about.html"> <h3> About Us</h3></a></li>
                     <li> <a class="link"  href="pages.html"> <h3> Customer's Reviews</h3></a></li>
                     <li> <a  class="link" href="contact.html"> <h3> Contact Us</h3></a></li>
@@ -318,25 +311,12 @@ Sale up to 25% off all in store</h3>
         </div>
            </div>
            <div class="mailus">
-              <h3> Mail Us :abc@gmail.com</h3>
+              <h3>Mail Us : <a href="mailto:poonam2010037@akgec.ac.in"> abc@gmail.com</a></h3>
            </div>
        </footer>
-       <script>
-         function cart(){
-             alert("This Is Your Shopping Cart ");
-         } 
-         function buy(){
-            //  window.confirm("Do You Want To Add This In Your Cart")
-             alert(" Item Added Successfully")
-         }
-      function myfunction(){
-          var x=
-          document.getElementById("mymenu");
-           if(x.className==="menu"){
-               x.className+="responsive";
-           }
-           else x.className="menu";
-      }
+       <script src="app.js">
+           
+          
            
        </script>
 </body>

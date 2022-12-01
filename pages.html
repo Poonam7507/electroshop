@@ -16,13 +16,13 @@
             <li><i class="fa fa-map-marker"> Select Location</i></li>
             <li><i class="fa fa-phone">012 345 6789</i></li>
             <li><i class="fa fa-truck">Track Order</i></li>
-            <li><i class="fa fa-sign-in">Log In</i></li>
-            <li><i class="fa fa-sign-in">Register</i></li>
+            <li><i class="fa fa-sign-in"  onclick="loginTabFun()"><a href="login.html">Log In</a> </i></li>
+            <li><i class="fa fa-sign-in" onclick="regTabFun()"><a href="login.html">Register</a></i></li>
         </ul> 
      </div> 
     <div class="title">
         <div class="logo">
-        <img src="logo2.png" alt="sry"  >
+        <img src="./images/logo2.png" alt="sry"  >
     </div>
            
         <div class="categories">
@@ -30,15 +30,12 @@
                 <input class="formin" type="search" placeholder="search">
             </form> -->
            
-            <select name="" id="categories">
-               <option value="0" selected type disabled>All categories</option>
-               <option value="1">Smart Phones</option>
-               <option value="2">Headphone</option>
-               <option value="4">Washing Machine</option>
-               <option value="5">Laptop</option>
-               <option value="6">Cameras</option>
-               <option value="7">Refrigerator</option>
-           </select>  
+            <select name="s" id="categories"onchange="location = this.value">
+                <option value="index.html" ><h3>All categories</h3></option>
+                <option value="phonepage.html">Smart Phones</option>
+                <option value="laptoppage.html">Laptop</option>
+               <option value="headphonepage.html">Headphone</option>
+            </select> 
         </div>
         <div class="icon" onclick="cart()">
               <i class="fa fa-shopping-cart"></i>
@@ -49,7 +46,7 @@
         <div class="menu" id="mymenu" >
             <ul>
                 <a  class="icon" href="javascript:void(0)" onclick="myfunction()"> <i class="fa fa-bars"></i></a>
-                <li> <a  href="electric.html" class="link">Home </a></li>
+                <li> <a  href="index.html" class="link">Home </a></li>
                 <li> <a href="about.html" class="link"> About Us</a></li>
                 <li> <a href="pages.html" class="link"> Customer's Reviews</a>
                   
@@ -89,7 +86,7 @@
     
     <div class="quicklink">
          <ul>
-            <li> <a  class="link"  href="electric.html"><h3>Home</h3> </a></li>
+            <li> <a  class="link"  href="index.html"><h3>Home</h3> </a></li>
             <li> <a  class="link" href="about.html"> <h3> About Us</h3></a></li>
             <li> <a class="link"  href="pages.html"> <h3> Customer's Reviews</h3></a></li>
             <li> <a  class="link" href="contact.html"> <h3> Contact Us</h3></a></li>
@@ -104,25 +101,11 @@
  </div>
     </div>
     <div class="mailus">
-       <h3> Mail Us :abc@gmail.com</h3>
-    </div>
+        <h3> Mail Us :<a href="mailto:poonam2010037@akgec.ac.in"> abc@gmail.com</a></h3>
+     </div>
 </footer>
-<script>
-    function cart(){
-        alert("This Is Your Shopping Cart ");
-    } 
-    function buy(){
-        prompt("Item Added Successfully\n\n Enter No. of Pieces")
-    }
- 
-    function myfunction(){
-          var x=
-          document.getElementById("mymenu");
-           if(x.className==="menu"){
-               x.className+="responsive";
-           }
-           else x.className="menu";
-      }
+<script src="app.js">
+   
            
   </script>
 </body>

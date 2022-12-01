@@ -7,7 +7,6 @@
     <title>Loginpage</title>
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
 <body>
     <div class="head">
@@ -16,13 +15,13 @@
             <li><i class="fa fa-map-marker"> Select Location</i></li>
             <li><i class="fa fa-phone">012 345 6789</i></li>
             <li><i class="fa fa-truck">Track Order</i></li>
-            <li><i class="fa fa-sign-in">Log In</i></li>
-            <li><i class="fa fa-sign-in">Register</i></li>
+            <li><i class="fa fa-sign-in"  onclick="loginTabFun()">Log In</i></li>
+            <li><i class="fa fa-sign-in" onclick="regTabFun()">Register</i></li>
         </ul> 
      </div> 
     <div class="title">
         <div class="logo">
-        <img src="logo2.png" alt="sry"  >
+            <img src="./images/logo2.png" alt="sry"  >
     </div>
            
         <div class="categories">
@@ -30,15 +29,12 @@
                 <input class="formin" type="search" placeholder="search">
             </form> -->
            
-            <select name="" id="categories">
-               <option value="0" selected type disabled><h3>All categories</h3></option>
-               <option value="1">Smart Phones</option>
-               <option value="2">Headphone</option>
-               <option value="4">Washing Machine</option>
-               <option value="5">Laptop</option>
-               <option value="6">Cameras</option>
-               <option value="7">Refrigerator</option>
-           </select>  
+            <select name="s" id="categories"onchange="location = this.value">
+                <option value="index.html" ><h3>All categories</h3></option>
+                <option value="phonepage.html">Smart Phones</option>
+                <option value="laptoppage.html">Laptop</option>
+                <option value="headphonepage.html">Headphone</option>
+            </select> 
         </div>
         <div class="icon" onclick="cart() ">
               <i class="fa fa-shopping-cart"></i>
@@ -49,7 +45,7 @@
     <div class="menu" id="mymenu" >
         <ul>
             <a  class="icon" href="javascript:void(0)" onclick="myfunction()"> <i class="fa fa-bars"></i></a>
-            <li> <a  href="electric.html" class="link">Home </a></li>
+            <li> <a  href="index.html" class="link">Home </a></li>
             <li> <a href="about.html" class="link"> About Us</a></li>
             <li> <a href="pages.html" class="link"> Customer's Reviews</a>
               
@@ -58,55 +54,95 @@
         </ul>
   </div>
     </nav>
-   
- <div class="form">
+   <section id="loginform">
+    <div id="container">
+        <div id="tabs">
+            <p id="lt" class="tabs" onclick="loginTabFun()">Log in</p>
+            <p id="rt" class="tabs" onclick="regTabFun()">Register</p>
 
- </div>
-    
+            <div id="clear"></div>
+        </div>
 
+        <div id="cont">
+            <div id="login" class="comm">
+                <h3>Sign in</h3>
 
-     
-<footer id="footer">
-    
-    <div class="quicklink">
-         <ul>
-             <li> <a  class="link"  href="electric.html"><h3>Home</h3> </a></li>
-             <li> <a  class="link" href="about.html"> <h3> About Us</h3></a></li>
-             <li> <a class="link"  href="pages.html"> <h3> Customer's Reviews</h3></a></li>
-             <li> <a  class="link" href="#newarrivals"> <h3> New Arrivals</h3></a></li>
-             <li> <a  class="link" href="contact.html"> <h3> Contact Us</h3></a></li>
-         </ul>
+                <input id="se"  class="infoform"  type="email" placeholder="Email" required/>
+                <input id="sp" class="infoform"  type="password" placeholder="Password" required/>
+                <input type="submit"  class="infoform" onclick="login()" value="Login "/>
+
+                <p onclick="forTabFun()">Forget Password?</p>
+            </div>
+            <div id="register" class="comm">
+                <h3>Register</h3>
+
+                <input id="re" class="infoform"  type="email" placeholder="Email" required/>
+                <input id="rp" class="infoform"  type="password" placeholder="Password" required/>
+                <input id="rrp" class="infoform"  type="password" placeholder="confirm Password" required/>
+                <input type="submit" class="infoform" onclick="register()" value="Register"/>
+
+            </div >
+            <div id="forgot" class="comm">
+            <h3>Forgot Password</h3>
+            <div>
+                <input id="fe"  class="infoform" type="email" placeholder="Email" required/>
+                <input type="submit" class="infoform"  onclick="forgot()" value="Submit"/>
+            </div>
+            </div>
+        </div>
     </div>
+    <!--<div id="footer">
+        <h2>By. Mansoor Amin </br> Roll No. 1941</h2>
 
-    <div class="followus">
-       <h1>Follow Us On</h1>
-   <div class="icon"><i class="fa fa-facebook"></i></div>
-  <div class="icon"><i class="fa fa-instagram"></i></div>
-  <div class="icon"><i class="fa fa-twitter"></i></div>
- </div>
+    </div>-->
+    
+
+    
+    <footer id="footer">
+        
+        <div class="quicklink">
+            <ul>
+                <li> <a  class="link"  href="electric.html"><h3>Home</h3> </a></li>
+                <li> <a  class="link" href="about.html"> <h3> About Us</h3></a></li>
+                <li> <a class="link"  href="pages.html"> <h3> Customer's Reviews</h3></a></li>
+                <li> <a  class="link" href="#newarrivals"> <h3> New Arrivals</h3></a></li>
+                <li> <a  class="link" href="contact.html"> <h3> Contact Us</h3></a></li>
+            </ul>
+        </div>
+        
+        <div class="followus">
+            <h1>Follow Us On</h1>
+            <div class="icon"><i class="fa fa-facebook"></i></div>
+            <div class="icon"><i class="fa fa-instagram"></i></div>
+            <div class="icon"><i class="fa fa-twitter"></i></div>
+        </div>
     </div>
     <div class="mailus">
-       <h3> Mail Us :abc@gmail.com</h3>
-    </div>
+        <h3>  Mail Us :<a href="mailto:poonam2010037@akgec.ac.in">abc@gmail.com</a></h3>
+     </div>
 </footer>
+</section>
+<script src="app.js">
+   
+    </script>
+<!-- <script src="app.js"> -->
 
-<script>
-    function cart(){
-        alert("This Is Your Shopping Cart ");
-    } 
-    function buy(){
-        prompt("Item Added Successfully\n\n Enter No. of Pieces")
-    }
-    function myfunction(){
-          var x=
-          document.getElementById("mymenu");
-           if(x.className==="menu"){
-               x.className+="responsive";
-           }
-           else x.className="menu";
-      }
+    <!-- // function cart(){
+    //     alert("This Is Your Shopping Cart ");
+    // } 
+    // function buy(){
+    //     prompt("Item Added Successfully\n\n Enter No. of Pieces")
+    // }
+    // function myfunction(){
+    //       var x=
+    //       document.getElementById("mymenu");
+    //        if(x.className==="menu"){
+    //            x.className+="responsive";
+    //        }
+    //        else x.className="menu";
+    //   } -->
            
       
-  </script>
+  <!-- </script> -->
 </body>
 </html>
